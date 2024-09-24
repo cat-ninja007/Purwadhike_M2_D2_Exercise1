@@ -14,7 +14,7 @@ body {
 .page {
   width: 1040px;
   margin: 0px auto;
-  padding-top: 64px;
+  padding-top: 40px;
 }
 
 /* Check margin */
@@ -30,16 +30,23 @@ nav {
 nav ul {
   display: flex;
   gap: 48px;
+  list-style: none;
 }
 
 /* Check list link style */
 nav ul li a {
-
+  text-decoration: none;
+  color: rgba(31, 21, 52, 1);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  min-width: 100px;
 }
 
 /* Make text bold on hover */
 nav ul li a:hover {
-  
+  font-weight: bold;
+  color: rgba(31, 21, 52, 1);
+  opacity: 1;
 }
 
 
@@ -53,31 +60,61 @@ main {
 /* Check margin and font styling */
 .text h1 {
   font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  margin-bottom: 16px;
 }
 
 /* Check font styling */
 .text h1 span {
+  color: rgba(137, 197, 204, 1);
+  font-weight: 700;
 }
 
 /* Check font styling */
 .text p {
   font-family: 'Open Sans', sans-serif; 
+  color: rgba(125, 121, 135, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.5px;
+  margin-bottom: 48px;
+}
+
+.text span {
+  font-weight: 700;
 }
 
 /* Check font styling and make sure the button is rounded */
 .text button {
   font-family: 'Open Sans', sans-serif;
   display: flex;
+  align-items: center;
   gap: 8px;
+
+  width: 169px;
+  height: 56px;
+  top: 486px;
+  left: 120px;
+  padding: 14px 32px 15px 32px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: rgba(105, 185, 157, 1);
+  color: rgba(249, 249, 249, 1);
+  border: none;
+
 }
 
 /* Handle when user hover on the button */
 .text button:hover {
+  background-color: #4A9A7E;
 }
 
 /* Check the text styling */
 footer {
   font-family: 'Open Sans', sans-serif; 
+  text-align: center;
 }
 
 /* Check the text styling */
